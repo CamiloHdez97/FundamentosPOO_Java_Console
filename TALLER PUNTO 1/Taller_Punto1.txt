@@ -1,0 +1,41 @@
+import java.text.DecimalFormat;
+//Agredo la libreria, para establecer un formato con el elemento Decimal Format.
+public class Taller_Punto1{
+	public static void main(String []args){
+	//Elaborado por: Camilo Hernandez - Grupo: E192  Fundamentos de POO
+	//Se utilizo tipo de dato Double, por su compatibilidad, sin restricciones en la cantidad de digitos decimales #.#.
+	int X=88;
+	double Y=3.5;
+	double Z=-5.2;
+	DecimalFormat formato = new DecimalFormat("#.0000");
+	System.out.println("Valor X: "+X+" Valor Y: "+Y+" Valor Z: "+Z+"\n");
+	//Punto 1 - (A)	
+	System.out.println("Punto 1 - (a)\nX + Y + Z : "+(X+Y+Z));
+	//Punto 1 - (B)	
+	System.out.println("\nPunto 1 - (b)\n2 * Y + 3 * ( X - Z ) : "+(2*Y+3*(X-Z)));
+	//Punto 1 - (C)	
+	System.out.println("\nPunto 1 - (C)\nX / Y : "+formato.format((X/Y)));
+	//Punto 1 - (D)
+	System.out.println("\nPunto 1 - (d)\nX % Y : "+(X%Y)+"%");
+	//Punto 1 - (E)
+    System.out.println("\nPunto 1 - (e)\nX / ( Y + Z ) : "+formato.format((X/(Y+Z))));
+    //Punto 1 - (F)
+    System.out.println("\nPunto 1 - (f)\n( X / Y ) + Z : "+formato.format(((X/Y)+Z)));
+    //Punto 1 - (G)
+    System.out.println("\nPunto 1 - (g)\n2 * X / 3 * Y : "+(2*X/3*Y));
+    //Punto 1 - (H)
+    System.out.println("\nPunto 1 - (h)\n2 * X / ( 3 * Y ) : "+formato.format((2*X/(3*Y))));
+    //Punto 1 - (I)
+    System.out.println("\nPunto 1 - (i)\nX * Y % Z : "+(float)(X*Y%Z)+"%");
+    //Punto 1 - (J)
+    System.out.println("\nPunto 1 - (j)\nX * ( Y % Z ) : "+(X*(Y%Z)));
+    //Punto 1 - (K)
+    System.out.println("\nPunto 1 - (k)\n3 * X - Z - 2 * X : "+(float)(3*X-Z-2*X));
+    //Punto 1 - (L)
+    System.out.println("\nPunto 1 - (l)\n2 * X / 5 % Y : "+(2*X/5%Y));
+    //Punto 1 - (M)
+    System.out.println("\nPunto 1 - (m)\nX - 100 % Y % Z : "+(X-100%Y%Z)+"%");
+    //Punto 1 - (N)
+    System.out.println("\nPunto 1 - (n)\nX - Y - Z * 2 : "+(X-Y-Z*2));
+	} 
+}

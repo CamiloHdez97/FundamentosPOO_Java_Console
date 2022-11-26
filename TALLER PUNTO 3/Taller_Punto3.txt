@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Taller_Punto3{
+    //Elaborado por: Camilo Hernandez - Grupo: E192  Fundamentos de POO
+    public static void main(String args[]) {
+    int C;
+    Scanner entrada = new Scanner(System.in);
+    System.out.println("Ingrese un número :");
+    C = entrada.nextInt();
+    //Condicional de Positivo - Negativo.
+        System.out.println(C+(C==0?" es neutro":(C>0?" es positivo.":" es negativo.")));      
+    //Condicional Par - Impar.
+    //El Resto de C%2 debe ser igual a cero para cumplir la condición.
+       System.out.println(C+(C%2==0?" es par.":" es impar."));           
+    //Multiplo de 5.
+    //El Resto de C%5 debe ser igual a 0, para ser multiplo de 5.
+        System.out.println(C+(C%5==0?" es múltiplo de 5.":" no es múltiplo de 5."));           
+    //Multiplo de 10.
+    ////El Resto de C%10 debe ser igual a 0, para ser multiplo de 10.
+        System.out.println(C+(C%10==0?" es múltiplo de 10.":" no es múltiplo de 10."));         
+    //Menor, igual o Mayor que 100.
+        System.out.println(C+(C==100?" no aplica, es igual a 100.":(C>100?" es mayor que 100":" es menor que 100.")));
+    }
+}
